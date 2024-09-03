@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+  <style>
+    .fire { /* remove id tag */
+      background-color: yellow;
+    }
+  </style>
+</head>
 <body>
   <h1>Understanding the DOM</h1>
   <!-- problem 2 -->
   <h2>Hello, World</h2>
+  <div id="myDiv">This should change the color</div>
+  <button class="fire">Change Color</button>
   <!-- problem 3 -->
   <button>Push Me</button>
   <script>
@@ -24,15 +32,15 @@
     PROBLEM 3: Create a button element that says "Push me" in the HTML above. Using the Elements panel, locate the button element and add a class of "btn" to it. Style the button by adding custom CSS rules within the Styles panel. Does the button still have the styles after a page refresh? Explain your answer.
     */
     // ENTER YOUR ANSWER HERE
-      const button = document.querySelector('button');
-      button.classList.add('btn');
+    const button = document.querySelector('button');
+    button.classList.add('btn');
       // The button style reverts to original after refresh
 
     /*
     PROBLEM 4: Open the Chrome DevTools on any webpage. Using the Elements panel, locate a paragraph element and modify its CSS properties, such as changing the font size, color, or adding a background color. Explain how we are able to make changes on the browser.
     */
     //ENTER YOUR ANSWER HERE
-    
+      // These changes are only to the Document Object Model (DOM), and do not actually change original code
 
     /*
     PROBLEM 5 (DEBUGGING): The following code has two bugs that are throwing a Syntax error and a style is not being applied. Find the bugs and code them correctly above in the HTML.
