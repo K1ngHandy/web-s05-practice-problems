@@ -8,16 +8,22 @@
     PROBLEM 1: Navigate to Google.com. Open the Chrome devtools and go to the console. Input 'window.' into the console and see that a bunch of methods pre-populate. What is the first property on the window object?
     */
     //ENTER YOUR CODE HERE
+    // window._
 
     /*
     PROBLEM 2: Write a script that will console log one of the widths of the global window object
     */
     //ENTER YOUR CODE HERE
+    console.log(window.innerWidth);
 
     /*
-   PROBLEM 3: Write a script that logs a boolean to check if the current window is the top-level window.
-   */
+    PROBLEM 3: Write a script that logs a boolean to check if the current window is the top-level window.
+    */
     //ENTER YOUR CODE HERE
+    const bool = () => {
+      window.top ? true : false;
+    }
+    bool;
 
     /*
     PROBLEM 4: Write a script that retrieves the URL of the current window and logs it to the console.
