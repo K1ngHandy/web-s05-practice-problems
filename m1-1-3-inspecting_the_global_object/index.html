@@ -21,9 +21,9 @@
     */
     //ENTER YOUR CODE HERE
     const bool = () => {
-      window.top ? true : false;
+      window.top ? 'true' : 'false';
     }
-    bool;
+    console.log(bool());
 
     /*
     PROBLEM 4: Write a script that retrieves the URL of the current window and logs it to the console.
@@ -34,8 +34,8 @@
     PROBLEM 5 (DEBUGGING): The following code is intended to log the window's innerHeight and innerWidth properties. However, it is not producing the expected output.
     // Find and fix the bug to make it work correctly.
     */
-    console.log("Problem 5 Window Height: " + window.height);
-    console.log("Problem 5 Window Width: ", window.width);
+    console.log("Problem 5 Window Height: " + window.innerHeight); // change to innerHeight
+    console.log("Problem 5 Window Width: ", window.innerWidth); // change to innerWidth
 
   </script>
 </body>
