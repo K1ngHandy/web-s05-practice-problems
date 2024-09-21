@@ -20,15 +20,18 @@
     PROBLEM 3: Write a script that logs a boolean to check if the current window is the top-level window.
     */
     //ENTER YOUR CODE HERE
-    const bool = () => {
-      window.top ? 'true' : 'false';
+    bool = () => {
+      window.top == window.self ? console.log(true) : console.log(false);
     }
-    console.log(bool());
 
     /*
     PROBLEM 4: Write a script that retrieves the URL of the current window and logs it to the console.
     */
     //ENTER YOUR CODE HERE
+    url = () => {
+      console.log('Window URL:', window.location.href);
+    };
+    url();
 
     /*
     PROBLEM 5 (DEBUGGING): The following code is intended to log the window's innerHeight and innerWidth properties. However, it is not producing the expected output.
