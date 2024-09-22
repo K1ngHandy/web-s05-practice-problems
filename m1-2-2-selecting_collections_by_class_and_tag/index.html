@@ -38,18 +38,22 @@
     PROBLEM 3: Print all the section headers (class = "section-header") in the web page to the console.
     */
     //ENTER YOUR CODE HERE
+    let sectionHeaders = document.getElementsByClassName('section-header');
+    console.log('Section Headers:', sectionHeaders);
 
     /*
     PROBLEM 4: Print all the elements that contains the text "Good luck!".
     Hint: You can search for the text "Good luck!" in the html document using cmd/ctrl + F. Use your findings to decide the best way to select all relevant elements
     */
     //ENTER YOUR CODE HERE
+    let goodLuck = document.getElementsByClassName('good-luck-text');
+    console.log('Good Luck:', goodLuck);
 
     /*
     PROBLEM 5 (DEBUGGING): There is a typo in the main header, h1 of our webpage. The code below was written in order to correct the typo. Fix the issue(s) with the code so it works as expected.
     */
-    const header = document.getElementsByTagName("h1");
-    header.innerText = 'Practice Problems Webpage';
+    const header = document.getElementsByTagName('h1');
+    header[0].innerText = 'Practice Problems Webpage'; // add [0] to grab only first h1
 
   </script>
 </body>
